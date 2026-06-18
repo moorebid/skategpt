@@ -5,61 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="a skatebard-centric chat bot and generative Ai, zeroed in on skate stuff, also creating a computer vision referee for remote games of skate."
+      content="A skateboard-centric AI assistant and computer vision referee for remote games of S.K.A.T.E."
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>SkateGPT - Skateboard-centric Ai</title>
+    <title>SkateGPT - Skateboard-centric AI</title>
   </head>
 
   <body>
-    <header>
-      <div class="logo">skate<span>GPT</span></div>
+    <header class="site-header">
+      <div class="logo hacked-logo">
+        <span class="brand-word">skate<span class="logo-gpt">GPT</span></span>
+        <em>HACKED</em>
+      </div>
+      <nav aria-label="Primary navigation">
+        <a href="#features">Vision</a>
+        <a href="#beta">Beta</a>
+      </nav>
     </header>
 
-    <section class="hero">
-      <h1>Remote game of Skate Judging, Powered by <span>Ollie-Ai</span></h1>
-      <p>
-        Analyze trick geometry, track body mechanics, and settle remote matches
-        with computer vision precision.
-      </p>
+    <main>
+      <section class="hero" id="beta">
+        <div class="hero-copy">
+          <p class="eyebrow">Remote S.K.A.T.E. referee</p>
+          <h1>SkateGPT calls the clip before the group chat does.</h1>
+          <p>
+            Ollie-AI analyzes trick geometry, stance, board rotation, and
+            landing control so remote games of S.K.A.T.E. can get a fast,
+            consistent call.
+          </p>
 
-      <form
-        class="cta-form"
-        onsubmit="
-          event.preventDefault();
-          alert(
-            'Stoked to have you on board! We will notify you when the beta drops.',
-          );
-        "
-      >
-        <input type="email" placeholder="Enter your email address" required />
-        <button type="submit">Request Beta Access</button>
-      </form>
-    </section>
+          <form
+            class="cta-form"
+            onsubmit="
+              event.preventDefault();
+              alert('Stoked to have you on board! We will notify you when the beta drops.');
+            "
+          >
+            <label class="sr-only" for="email">Email address</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit">Request Beta</button>
+          </form>
 
-    <section class="features">
-      <div class="feature-card">
-        <h3>Computer Vision Breakdown</h3>
-        <p>
-          Real-time pose estimation and board tracking, helping to determine
-          makes and misses during Game Of skate.
-        </p>
-      </div>
-      <div class="feature-card">
-        <h3>Remote game of S.K.A.T.E. referee</h3>
-        <p>
-          Challenge anyone, anywhere. Our automated AI logic reviews trick
-          validity, ensuring fair, undisputed matchups.
-        </p>
-      </div>
-      <div class="feature-card">
-        <h3>Performance Analysis</h3>
-        <p>
-          Track your progression metrics over time, look at trick consistency,
-          and refine your bag.
-        </p>
-      </div>
-    </section>
+          <div class="hero-actions">
+            <span>Pose tracking</span>
+            <span>Board rotation</span>
+            <span>Landing control</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="8-bit SkateGPT hacked animation">
+          <div class="review-card">
+            <div class="review-topbar">
+              <span></span>
+              <span></span>
+              <span></span>
+              <strong>8-bit bonk.exe</strong>
+            </div>
+            <div class="pixel-stage">
+              <div class="pixel-sun"></div>
+              <div class="pixel-cloud cloud-one"></div>
+              <div class="pixel-cloud cloud-two"></div>
+              <div class="pixel-skater attacker">
+                <span class="pixel-head"></span>
+                <span class="pixel-cap"></span>
+                <span class="pixel-body"></span>
+                <span class="pixel-arm front-arm"></span>
+                <span class="pixel-arm back-arm"></span>
+                <span class="pixel-leg front-leg"></span>
+                <span class="pixel-leg back-leg"></span>
+                <span class="pixel-board weapon-board"></span>
+              </div>
+              <div class="pixel-skater bonked">
+                <span class="pixel-head"></span>
+                <span class="pixel-cap"></span>
+                <span class="pixel-body"></span>
+                <span class="pixel-arm front-arm"></span>
+                <span class="pixel-arm back-arm"></span>
+                <span class="pixel-leg front-leg"></span>
+                <span class="pixel-leg back-leg"></span>
+              </div>
+              <div class="impact-burst" aria-hidden="true">
+                <span>BONK</span>
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
+            </div>
+            <div class="callout-grid">
+              <div>
+                <span>Mode</span>
+                <strong>8-bit</strong>
+              </div>
+              <div>
+                <span>Status</span>
+                <strong>Hacked</strong>
+              </div>
+              <div>
+                <span>Combo</span>
+                <strong>Bonk</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <article class="feature-card">
+          <span class="feature-index">01</span>
+          <h3>Computer Vision Breakdown</h3>
+          <p>
+            Real-time pose estimation and board tracking help determine makes
+            and misses during games of S.K.A.T.E.
+          </p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-index">02</span>
+          <h3>Remote Match Referee</h3>
+          <p>
+            Challenge anyone, anywhere. Automated AI logic reviews trick
+            validity for fair, undisputed matchups.
+          </p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-index">03</span>
+          <h3>Performance Analysis</h3>
+          <p>
+            Track progression metrics over time, study trick consistency, and
+            refine your bag with cleaner feedback.
+          </p>
+        </article>
+      </section>
+    </main>
 
     <footer>
       <p>&copy; 2026 SkateGPT. All rights reserved.</p>
